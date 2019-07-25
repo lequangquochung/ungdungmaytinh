@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css" media="screen">
+input button {
+	float: left;
+	margin-left: 10px;
+
+}	
+</style>
+<body>
+<input type="text" id=num1> 
+<input type="text" id=num2> <br><br>
+
+<button id="cong" type="" onclick="cong()">Cộng</button>
+<button id="tru" type="" onclick="tru()">Trừ</button>
+<button id="nhan" type="" onclick="nhan()">Nhân</button>
+<button id="chia" type="" onclick="chia()">Chia</button>
+<h5>Kết Quả</h5>
+<p id=KQ></p>
+
+<script type="text/javascript">
+	function cong(argument) {
+		var input1=parseFloat(document.getElementById('num1').value);	
+		var input2=parseFloat(document.getElementById('num2').value);	
+		var cong=input1+input2;
+		document.getElementById('KQ').innerHTML = cong ;		
+
+	}
+	function tru(argument) {
+		var input1=parseFloat(document.getElementById('num1').value);	
+		var input2=parseFloat(document.getElementById('num2').value);	
+		var tru=input1-input2;
+		document.getElementById('KQ').innerHTML = tru ;		
+
+	}
+
+	function nhan(argument) {
+		var input1=parseFloat(document.getElementById('num1').value);	
+		var input2=parseFloat(document.getElementById('num2').value);	
+		var nhan=input1*input2;
+		document.getElementById('KQ').innerHTML = nhan ;		
+
+	}
+
+	function chia(argument) {
+		var input1=parseFloat(document.getElementById('num1').value);	
+		var input2=parseFloat(document.getElementById('num2').value);	
+		var chia=input1/input2;
+		document.getElementById('KQ').innerHTML = chia ;		
+
+	}
+
+
+</script>
+</body>
+</html>
